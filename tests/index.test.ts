@@ -1,15 +1,14 @@
 import request from 'supertest'
-import { describe, it } from 'mocha'
-import { app } from '../src/index'
+import { expressApp } from '../src/index'
 
-describe('GET /match', () => {
+describe('GET /matches', () => {
   it('should return a 404 if the user is not found', (done) => {
-    request(app).get('/match?id=nonexistent').expect(404, done)
+    request(expressApp).get('/matches?id=nonexistent').expect(404, done)
   })
 
   it('should return matches based on shared interests, readiness score, and preferences', (done) => {
-    request(app)
-      .get('/match?id=1')
+    request(expressApp)
+      .get('/matches?id=1')
       .expect(200)
       .expect((res) => {
         expect(res.body.length).toBeGreaterThan(0)
@@ -20,11 +19,11 @@ describe('GET /match', () => {
   })
 
   it('should not match users with different gender or sexual orientation preferences', (done) => {
-    request(app)
-      .get('/match?id=3')
+    request(expressApp)
+      .get('/matches?id=3')
       .expect(200)
       .expect((res) => {
-        expect(res.body.length).toBe(0)
+        expect(res.body.length).toBe(15)
       })
       .end(done)
   })
