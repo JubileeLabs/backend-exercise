@@ -8,6 +8,7 @@ Create an API endpoint that matches users based on their interests, relationship
 
 ## Requirements
 
-1. Implement an endpoint /matches that takes a user's ID and returns a list of matched users.
-2. The endpoint should accept the user ID as a query parameter.
-3. Use a mock database of users with interests, relationship readiness score, gender, and sexual orientation to perform the matching.
+1. Check out this repo and create a branch for your work
+2. Implement an endpoint /matches that takes a user's ID and returns a list of matched users.
+3. The endpoint should accept the user ID as a query parameter.
+4. Use a mock database of users with interests, relationship readiness score, gender, and sexual orientation to perform the matching.
