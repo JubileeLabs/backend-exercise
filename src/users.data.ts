@@ -7,7 +7,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'movies', 'reading'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '2',
@@ -15,7 +15,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'music', 'cooking'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '3',
@@ -23,7 +23,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'gaming', 'coding'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '4',
@@ -31,7 +31,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'music', 'hiking'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '5',
@@ -39,7 +39,7 @@ export const USERS: IUser[] = [
     interests: ['dancing', 'painting', 'traveling'],
     readinessScore: 5,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '6',
@@ -47,7 +47,7 @@ export const USERS: IUser[] = [
     interests: ['photography', 'running', 'gaming'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '7',
@@ -55,7 +55,7 @@ export const USERS: IUser[] = [
     interests: ['cooking', 'hiking', 'movies'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '8',
@@ -63,7 +63,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'coding', 'movies'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '9',
@@ -71,7 +71,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'movies', 'traveling'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '10',
@@ -79,7 +79,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'music', 'photography'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '11',
@@ -87,7 +87,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'gaming', 'cooking'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '12',
@@ -95,7 +95,7 @@ export const USERS: IUser[] = [
     interests: ['running', 'movies', 'coding'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '13',
@@ -103,7 +103,7 @@ export const USERS: IUser[] = [
     interests: ['traveling', 'dancing', 'music'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '14',
@@ -111,7 +111,7 @@ export const USERS: IUser[] = [
     interests: ['photography', 'reading', 'gaming'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '15',
@@ -119,7 +119,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'coding', 'movies'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '16',
@@ -127,7 +127,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'music', 'traveling'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '17',
@@ -135,7 +135,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'dancing', 'painting'],
     readinessScore: 7,
     gender: 'non-binary',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '18',
@@ -143,7 +143,7 @@ export const USERS: IUser[] = [
     interests: ['running', 'hiking', 'photography'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '19',
@@ -151,7 +151,7 @@ export const USERS: IUser[] = [
     interests: ['coding', 'reading', 'gaming'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '20',
@@ -159,7 +159,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'movies', 'cooking'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '21',
@@ -167,7 +167,7 @@ export const USERS: IUser[] = [
     interests: ['traveling', 'painting', 'running'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '22',
@@ -175,7 +175,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'photography', 'coding'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '23',
@@ -183,7 +183,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'music', 'dancing'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '24',
@@ -191,7 +191,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'hiking', 'gaming'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '25',
@@ -199,7 +199,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'coding', 'traveling'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '26',
@@ -207,7 +207,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'movies', 'photography'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '27',
@@ -215,7 +215,7 @@ export const USERS: IUser[] = [
     interests: ['dancing', 'music', 'cooking'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '28',
@@ -223,7 +223,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'movies', 'gaming'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '29',
@@ -231,7 +231,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'painting', 'photography'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '30',
@@ -239,7 +239,7 @@ export const USERS: IUser[] = [
     interests: ['coding', 'music', 'movies'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '31',
@@ -247,7 +247,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'running', 'traveling'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '32',
@@ -255,7 +255,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'coding', 'photography'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '33',
@@ -263,7 +263,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'music', 'dancing'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '34',
@@ -271,7 +271,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'hiking', 'gaming'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '35',
@@ -279,7 +279,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'coding', 'traveling'],
     readinessScore: 5,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '36',
@@ -287,7 +287,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'movies', 'photography'],
     readinessScore: 9,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '37',
@@ -295,7 +295,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'dancing', 'cooking'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '38',
@@ -303,7 +303,7 @@ export const USERS: IUser[] = [
     interests: ['coding', 'gaming', 'traveling'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '39',
@@ -311,7 +311,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'reading', 'movies'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '40',
@@ -319,7 +319,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'gaming', 'photography'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '41',
@@ -327,7 +327,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'coding', 'dancing'],
     readinessScore: 5,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '42',
@@ -335,7 +335,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'music', 'traveling'],
     readinessScore: 9,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '43',
@@ -343,7 +343,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'reading', 'hiking'],
     readinessScore: 8,
     gender: 'non-binary',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '44',
@@ -351,7 +351,7 @@ export const USERS: IUser[] = [
     interests: ['dancing', 'painting', 'coding'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '45',
@@ -359,7 +359,7 @@ export const USERS: IUser[] = [
     interests: ['photography', 'movies', 'music'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '46',
@@ -367,7 +367,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'gaming', 'reading'],
     readinessScore: 5,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '47',
@@ -375,7 +375,7 @@ export const USERS: IUser[] = [
     interests: ['coding', 'dancing', 'music'],
     readinessScore: 9,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '48',
@@ -383,7 +383,7 @@ export const USERS: IUser[] = [
     interests: ['traveling', 'painting', 'movies'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '49',
@@ -391,7 +391,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'photography', 'hiking'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '50',
@@ -399,7 +399,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'coding', 'traveling'],
     readinessScore: 5,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '51',
@@ -407,7 +407,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'gaming', 'reading'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '52',
@@ -415,7 +415,7 @@ export const USERS: IUser[] = [
     interests: ['dancing', 'painting', 'hiking'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '53',
@@ -423,7 +423,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'traveling', 'coding'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '54',
@@ -431,7 +431,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'photography', 'gaming'],
     readinessScore: 5,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '55',
@@ -439,7 +439,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'reading', 'painting'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '56',
@@ -447,7 +447,7 @@ export const USERS: IUser[] = [
     interests: ['dancing', 'music', 'coding'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '57',
@@ -455,7 +455,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'gaming', 'traveling'],
     readinessScore: 9,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '58',
@@ -463,7 +463,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'music', 'dancing'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '59',
@@ -471,7 +471,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'reading', 'hiking'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '60',
@@ -479,7 +479,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'photography', 'coding'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '61',
@@ -487,7 +487,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'music', 'traveling'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '62',
@@ -495,7 +495,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'reading', 'movies'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '63',
@@ -503,7 +503,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'dancing', 'photography'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '64',
@@ -511,7 +511,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'hiking', 'coding'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '65',
@@ -519,7 +519,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'traveling', 'movies'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '66',
@@ -527,7 +527,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'reading', 'dancing'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '67',
@@ -535,7 +535,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'movies', 'hiking'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '68',
@@ -543,7 +543,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'coding', 'traveling'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '69',
@@ -551,7 +551,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'photography', 'dancing'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '70',
@@ -559,7 +559,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'music', 'movies'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '71',
@@ -567,7 +567,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'painting', 'reading'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '72',
@@ -575,7 +575,7 @@ export const USERS: IUser[] = [
     interests: ['coding', 'movies', 'traveling'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '73',
@@ -583,7 +583,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'hiking', 'music'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '74',
@@ -591,7 +591,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'dancing', 'painting'],
     readinessScore: 8,
     gender: 'non-binary',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '75',
@@ -599,7 +599,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'coding', 'traveling'],
     readinessScore: 6,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '76',
@@ -607,7 +607,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'gaming', 'photography'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '77',
@@ -615,7 +615,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'reading', 'music'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '78',
@@ -623,7 +623,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'dancing', 'gaming'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '79',
@@ -631,7 +631,7 @@ export const USERS: IUser[] = [
     interests: ['traveling', 'coding', 'movies'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '80',
@@ -639,7 +639,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'music', 'photography'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '81',
@@ -647,7 +647,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'hiking', 'dancing'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '82',
@@ -655,7 +655,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'movies', 'coding'],
     readinessScore: 8,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '83',
@@ -663,7 +663,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'painting', 'traveling'],
     readinessScore: 9,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '84',
@@ -671,7 +671,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'reading', 'dancing'],
     readinessScore: 5,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '85',
@@ -679,7 +679,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'music', 'gaming'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '86',
@@ -687,7 +687,7 @@ export const USERS: IUser[] = [
     interests: ['photography', 'traveling', 'coding'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '87',
@@ -695,7 +695,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'gaming', 'hiking'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '88',
@@ -703,7 +703,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'dancing', 'painting'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '89',
@@ -711,7 +711,7 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'music', 'traveling'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '90',
@@ -719,7 +719,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'hiking', 'coding'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '91',
@@ -727,7 +727,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'movies', 'gaming'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '92',
@@ -735,7 +735,7 @@ export const USERS: IUser[] = [
     interests: ['dancing', 'music', 'traveling'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '93',
@@ -743,7 +743,7 @@ export const USERS: IUser[] = [
     interests: ['reading', 'gaming', 'hiking'],
     readinessScore: 9,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '94',
@@ -751,7 +751,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'painting', 'music'],
     readinessScore: 7,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
   {
     id: '95',
@@ -759,7 +759,7 @@ export const USERS: IUser[] = [
     interests: ['coding', 'gaming', 'traveling'],
     readinessScore: 5,
     gender: 'male',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '96',
@@ -767,7 +767,7 @@ export const USERS: IUser[] = [
     interests: ['hiking', 'dancing', 'movies'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['male'],
   },
   {
     id: '97',
@@ -775,7 +775,7 @@ export const USERS: IUser[] = [
     interests: ['music', 'reading', 'gaming'],
     readinessScore: 8,
     gender: 'male',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['male'],
   },
   {
     id: '98',
@@ -783,7 +783,7 @@ export const USERS: IUser[] = [
     interests: ['painting', 'traveling', 'coding'],
     readinessScore: 9,
     gender: 'female',
-    sexualOrientation: 'bisexual',
+    genderPreference: ['male', 'female'],
   },
   {
     id: '99',
@@ -791,7 +791,7 @@ export const USERS: IUser[] = [
     interests: ['movies', 'hiking', 'music'],
     readinessScore: 7,
     gender: 'male',
-    sexualOrientation: 'heterosexual',
+    genderPreference: ['female'],
   },
   {
     id: '100',
@@ -799,6 +799,6 @@ export const USERS: IUser[] = [
     interests: ['gaming', 'dancing', 'photography'],
     readinessScore: 6,
     gender: 'female',
-    sexualOrientation: 'homosexual',
+    genderPreference: ['female'],
   },
 ]
