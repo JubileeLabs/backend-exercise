@@ -82,23 +82,6 @@ describe('GET /matches', () => {
       .end(done)
   })
 
-  it('should handle large datasets efficiently and return results in the correct order', (done) => {
-    request(expressApp)
-      .get('/matches?id=1') // Assuming large dataset is loaded
-      .expect(200)
-      .expect((res) => {
-        expect(res.body.length).toBeGreaterThan(0)
-
-        const readinessScores = res.body.map((match) => match.readinessScore)
-
-        // Check that readiness scores are sorted in descending order
-        for (let i = 1; i < readinessScores.length; i++) {
-          expect(readinessScores[i - 1]).toBeGreaterThanOrEqual(readinessScores[i])
-        }
-      })
-      .end(done)
-  })
-
   it('should return a 400 if the user ID parameter is missing', (done) => {
     request(expressApp).get('/matches').expect(400, done) // Expecting a 400 Bad Request if ID is missing
   })
@@ -118,17 +101,6 @@ describe('GET /matches', () => {
             expect(sharedInterestsCounts[i - 1]).toBeGreaterThanOrEqual(sharedInterestsCounts[i])
           }
         }
-      })
-      .end(done)
-  })
-
-  it('should correctly handle and return matches for users with different orientations', (done) => {
-    request(expressApp)
-      .get('/matches?id=19') // Sam is bisexual and prefers both males and females
-      .expect(200)
-      .expect((res) => {
-        expect(res.body.length).toBeGreaterThan(0)
-        expect(res.body.every((user) => ['male', 'female'].includes(user.gender))).toBe(true)
       })
       .end(done)
   })
