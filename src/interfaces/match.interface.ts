@@ -1,10 +1,9 @@
+import { IUser } from './user.interface'
+
 export interface IMatch {
-  id: string
-  name: string
-  interests: string[]
-  readinessScore: number
-  gender: string
-  genderPreference: string[]
+  user1: IUser
+  user2: IUser
   sharedInterests: string[]
   interestCount: number
+  readinessScoreDifference: number
 }
