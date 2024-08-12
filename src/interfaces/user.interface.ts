@@ -1,4 +1,4 @@
-import { Gender } from './gender.type'
+import { Gender } from '../gender.type'
 
 export interface IUser {
   id: string

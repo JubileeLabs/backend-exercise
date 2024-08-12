@@ -1,5 +1,6 @@
 import request from 'supertest'
 import { expressApp } from '../src/index'
+import { IMatch } from '../src/interfaces/match.interface'
 
 describe('GET /matches', () => {
   it('should return a 404 if the user is not found', (done) => {
@@ -13,8 +14,8 @@ describe('GET /matches', () => {
       .expect((res) => {
         expect(res.body.length).toBeGreaterThan(0)
 
-        const readinessScores = res.body.map((match) => match.readinessScore)
-        const sharedInterestsCounts = res.body.map((match) => match.sharedInterests.length)
+        const readinessScores = res.body.map((match: IMatch) => match.readinessScore)
+        const sharedInterestsCounts = res.body.map((match: IMatch) => match.sharedInterests.length)
 
         // Check that matches are first sorted by readiness score (descending)
         for (let i = 1; i < readinessScores.length; i++) {
@@ -37,7 +38,9 @@ describe('GET /matches', () => {
       .expect(200)
       .expect((res) => {
         expect(
-          res.body.every((user) => user.gender === 'male' && user.genderPreference.includes('male'))
+          res.body.every(
+            (match: IMatch) => match.gender === 'male' && match.genderPreference.includes('male')
+          )
         ).toBe(true)
       })
       .end(done)
@@ -61,7 +64,7 @@ describe('GET /matches', () => {
       .expect((res) => {
         expect(res.body.length).toBeGreaterThan(0)
 
-        const readinessScores = res.body.map((match) => match.readinessScore)
+        const readinessScores = res.body.map((match: IMatch) => match.readinessScore)
 
         // Check that readiness scores are sorted in descending order
         for (let i = 1; i < readinessScores.length; i++) {
@@ -77,7 +80,9 @@ describe('GET /matches', () => {
       .expect(200)
       .expect((res) => {
         expect(res.body.length).toBeGreaterThan(0)
-        expect(res.body.every((user) => ['male', 'female'].includes(user.gender))).toBe(true)
+        expect(res.body.every((match: IMatch) => ['male', 'female'].includes(match.gender))).toBe(
+          true
+        )
       })
       .end(done)
   })
@@ -91,8 +96,8 @@ describe('GET /matches', () => {
       .get('/matches?id=8') // Hank has a readiness score of 8
       .expect(200)
       .expect((res) => {
-        const readinessScores = res.body.map((match) => match.readinessScore)
-        const sharedInterestsCounts = res.body.map((match) => match.sharedInterests.length)
+        const readinessScores = res.body.map((match: IMatch) => match.readinessScore)
+        const sharedInterestsCounts = res.body.map((match: IMatch) => match.sharedInterests.length)
 
         // Check consistency in sorting
         for (let i = 1; i < readinessScores.length; i++) {

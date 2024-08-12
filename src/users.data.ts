@@ -1,4 +1,4 @@
-import { IUser } from './user.interface'
+import { IUser } from './interfaces/user.interface'
 
 export const USERS: IUser[] = [
   {
