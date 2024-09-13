@@ -8,4 +8,8 @@ export interface IUser {
   gender: Gender
   genderPreference: Gender[]
   height: number
+  heightPreference: {
+    min: number
+    max: number
+  }
 }
