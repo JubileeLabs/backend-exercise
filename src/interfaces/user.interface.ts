@@ -7,4 +7,5 @@ export interface IUser {
   readinessScore: number
   gender: Gender
   genderPreference: Gender[]
+  height: number
 }
