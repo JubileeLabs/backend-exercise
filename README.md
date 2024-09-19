@@ -19,6 +19,7 @@ Create an API endpoint that matches users based on their interests, relationship
 
 7. Users who have more shared interests should be be prioritized ahead in the matches list than Users have fewer shared interests.
 8. Only match Users who match each other's height preference.
+9. Error handling for missing or invalid user IDs.
 
 ## Example
 
