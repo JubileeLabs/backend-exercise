@@ -1,6 +1,7 @@
 import request from 'supertest'
 import { expressApp } from '../src/index'
 import { IMatch } from '../src/interfaces/match.interface'
+import { USERS } from '../src/users.data'
 
 describe('GET /matches', () => {
   it('should return a 404 if the user is not found', (done) => {
@@ -147,5 +148,36 @@ describe('GET /matches', () => {
         ).toBe(true)
       })
       .end(done)
+  })
+
+  it("should only match users who match each other's height preference", (done) => {
+    request(expressApp)
+      .get('/matches?id=1') // Alice
+      .expect(200)
+      .expect((res) => {
+        expect(res.body.length).toBeGreaterThan(0)
+        expect(
+          res.body.every((match: IMatch) => {
+            const aliceHeight = USERS.find((user) => user.id === '1')?.height
+            const matchHeight = USERS.find((user) => user.id === match.user2.id)?.height
+            const aliceHeightPreference = USERS.find((user) => user.id === '1')?.heightPreference
+            const matchHeightPreference = USERS.find(
+              (user) => user.id === match.user2.id
+            )?.heightPreference
+
+            if (!aliceHeightPreference || !matchHeightPreference || !aliceHeight || !matchHeight) {
+              return true
+            }
+
+            const aliceLikesMatch =
+              aliceHeightPreference.min <= matchHeight && aliceHeightPreference.max >= matchHeight
+            const matchLikesAlice =
+              matchHeightPreference.min <= aliceHeight && matchHeightPreference.max >= aliceHeight
+
+            return aliceLikesMatch && matchLikesAlice
+          })
+        ).toBe(true)
+      })
+      .end(done) // Add this line to properly complete the request
   })
 })
