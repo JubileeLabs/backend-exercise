@@ -112,7 +112,7 @@ describe('GET /matches', () => {
   })
 
   it('should return a 400 if the user ID parameter is missing', (done) => {
-    request(expressApp).get('/matches').expect(400, done) // Expecting a 400 Bad Request if ID is missing
+    request(expressApp).get('/matches').expect(400, done)
   })
 
   it('should return consistent results when multiple matches have identical readiness score differences and shared interests', (done) => {
