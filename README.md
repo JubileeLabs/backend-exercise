@@ -14,6 +14,7 @@ Create an API endpoint that matches users based on their interests, relationship
 4. Use the mock database of users with interests, relationship readiness score, gender, and gender preference to perform the matching.
 5. Ensure User is only matched with other sexually compatible Users (e.g. heterosexual men are only matched with heterosexual women)
 6. Users whose relationship readiness score is closer should be prioritized ahead of Users in the matches list than those whose relationship readiness score is farther.
+7. Should code in Typescript
 
 ## Bonus
 
@@ -21,10 +22,14 @@ Create an API endpoint that matches users based on their interests, relationship
 8. Only match Users who match each other's height preference.
 9. Error handling for missing or invalid user IDs.
 
-## Example
-
-### Request
+## Example Request
 
 ```
 GET /matches?userId=123
+```
+
+## Testing
+
+```
+npm test
 ```
