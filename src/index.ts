@@ -6,3 +6,8 @@ import { IMatch } from './interfaces/match.interface'
 export const expressApp = express()
 
 // TODO: Implement the /matches route
+
+expressApp.get('/matches', (req, res) => {
+  // TODO
+  // res.json(matches)
+})
